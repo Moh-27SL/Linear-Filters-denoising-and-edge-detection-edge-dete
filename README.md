@@ -1,7 +1,7 @@
 # Linear Filters in Image Processing
 Enhancing and extracting image features through classical convolution-based filtering.
 
-*Supports GRAYSCALE images only*
+*Supports GRAYSCALE images only, and uses clamping not padding in convolution*
 
 ---
 
@@ -9,27 +9,27 @@ Enhancing and extracting image features through classical convolution-based filt
 
 | Original | Moving average | gaussian |
 |----------|----------------|----------|
-| ![original](images/cat.png) | ![moving average](images/cat_filtered.png) | ![gaussian](images/cat_filtered.png) |
+| ![original](result/Denoising/lena.png) | ![moving average](result/Denoising/smoothing_weighted_average.png) | ![gaussian](result/Denoising/smoothing_gaussian.png) |
 
 ## Blurring
 
 | Original | Moving average | gaussian |
 |----------|----------------|----------|
-| ![original](images/cat.png) | ![moving average](images/cat_filtered.png) | ![gaussian](images/cat_filtered.png) |
+| ![original](result/Denoising/lena.png) | ![moving average](result/Denoising/blurring_weighted_average.png) | ![gaussian](result/Denoising/blurring_gaussian.png) |
 
 ## Edge Detection Steerable 
 *first partial derivative wrt direction, Gaussian*
 
 | Original | 0 deg | pi/2 deg | pi/4 deg |
 |----------|-------|----------|----------|
-| ![original](images/cat.png) | ![0 deg](images/cat_filtered.png) | ![90 deg](images/cat_filtered.png) | ![45 deg](images/cat_filtered.png) |
+| ![original](result/steerable_filters/shape.png) | ![0 deg](result/steerable_filters/Edge_0.png) | ![90 deg](result/steerable_filters/Edge_90.png) | ![45 deg](result/steerable_filters/Edge_45.png) |
 
 ## Shape Detection Steerable 
 *second partial derivative wrt direction, Gaussian*
 
 | Original | 0 deg | pi/2 deg | pi/4 deg |
 |----------|-------|----------|----------|
-| ![original](images/cat.png) | ![0 deg](images/cat_filtered.png) | ![90 deg](images/cat_filtered.png) | ![45 deg](images/cat_filtered.png) |
+| ![original](result/steerable_filters/shape.png) | ![0 deg](result/steerable_filters/shape_sec_90.png) | ![90 deg](result/steerable_filters/shape_sec_45.png) | ![45 deg](result/steerable_filters/shape_sec_0.png) |
 
 ---
 
